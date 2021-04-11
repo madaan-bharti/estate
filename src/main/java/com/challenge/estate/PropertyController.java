@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.File;
@@ -14,12 +15,17 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-@RestController
+@Controller
 @Component
 public class PropertyController implements CommandLineRunner{
 
     @Autowired
     PropertyService propertyService;
+
+    @RequestMapping(value = "/")
+    public String index() {
+        return "index";
+    }
 
     @GetMapping("/properties/count")
     private long getPropertiesCount() {
