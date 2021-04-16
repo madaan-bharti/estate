@@ -87,8 +87,6 @@ public class PropertyService {
         return this.filterPropertiesByPrice(properties, realEstateType, null, price);
     }
 
-
-
     public void save(Property property) {
         propertyRepository.save(property);
     }

@@ -14,8 +14,8 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
+
 @RestController
-@Component
 public class PropertyController implements CommandLineRunner{
 
     @Autowired
