@@ -39,7 +39,7 @@ public class PropertyService {
 
     public List<Property> filterPropertiesByRealEstateType(List<Property> properties,
                                                            String realEstateType) {
-        if (realEstateType == null) {
+        if (realEstateType == null || realEstateType.isEmpty()) {
             return properties;
         }
 
