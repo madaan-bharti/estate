@@ -55,7 +55,7 @@ public class PropertyService {
     public List<Property> filterPropertiesByPrice(List<Property> properties,
                                                   String realEstateType,
                                                   Long minPrice, Long maxPrice) {
-        if (realEstateType == null) {
+        if (realEstateType == null || realEstateType.isEmpty()) {
             return properties;
         }
 
