@@ -74,3 +74,4 @@ example request url :
 #### Run in the browser:
 Go to url `http://localhost:8080/` -> This is automatically mapped to load index.html
 
+![](demo.gif)
